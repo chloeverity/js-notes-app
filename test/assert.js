@@ -5,5 +5,12 @@ var assert = {
     } else {
       console.log('.')
     }
+  },
+  isInstanceOf: function(argumentOne, argumentTwo) {
+    if (argumentOne instanceof argumentTwo) {
+      console.log('.')
+    } else {
+      throw new Error(`Assertion failed: ${argumentOne} is not an instance of ${argumentTwo}`)
+    }
   }
 }
