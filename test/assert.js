@@ -12,5 +12,12 @@ var assert = {
     } else {
       throw new Error(`Assertion failed: ${argumentOne} is not an instance of ${argumentTwo}`)
     }
-  }
+  },
+  includes: function(argumentOne, argumentTwo) {
+    if (argumentOne.includes(argumentTwo)) {
+      console.log('.')
+    } else {
+      throw new Error(`Assertion failed: ${argumentOne} does not include ${argumentTwo}`)
+    }
+  },
 }
