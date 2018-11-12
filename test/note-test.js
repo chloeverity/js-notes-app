@@ -3,7 +3,7 @@
     text = 'My first note'
     var note = new Note(text)
 
-    assert.isEqualTo(note.text, text)
+    assert.isEqualTo(note.getText(), text)
   }
   testNoteHasText()
 })(this)
