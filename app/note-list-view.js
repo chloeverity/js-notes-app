@@ -1,6 +1,7 @@
 (function(exports) {
   function NoteListView(noteList) {
     this.noteList = noteList
+    this.MAX_NOTE_LENGTH = 20
   }
 
   NoteListView.prototype._formatNote = function(string) {
