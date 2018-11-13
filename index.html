@@ -4,7 +4,7 @@
 </head>
 <body>
   <div id='app'>
-    hello
+    List of notes:
   </div>
 <script src='./app/note.js'></script>
 <script src='./app/note-list.js'></script>
@@ -12,8 +12,8 @@
 <script src='./app/note-controller.js'></script>
 <script>
 controller = new NoteController(new NoteList())
-controller.addNote("My first note")
-controller.createView()
+// controller.addNote("My first note")
+// controller.createView()
 controller.insertHTML()
 </script>
 </body>

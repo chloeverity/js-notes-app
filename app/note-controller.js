@@ -1,15 +1,8 @@
 (function(exports) {
-  function NoteController(notelist) {
-    this.notelist = notelist
-    this.noteListView = 'hello'
-  }
-
-  NoteController.prototype.addNote = function(text) {
-    this.notelist.addNote(text)
-  }
-
-  NoteController.prototype.createView = function() {
-    this.noteListView = new NoteListView(this.notelist)
+  function NoteController(noteList) {
+    this.noteList = noteList
+    this.noteList.addNote("favourite drink: seltzer")
+    this.noteListView = new NoteListView(this.noteList)
   }
 
   NoteController.prototype.insertHTML = function() {
