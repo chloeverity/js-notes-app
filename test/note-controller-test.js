@@ -11,6 +11,6 @@ describe('A note controller', function () {
     element.style.display = 'none'
     document.body.appendChild(element)
     noteController.insertHTML()
-    expect(element.innerHTML).isEqualTo('<ul><li><div>favourite drink: seltzer</div></li></ul>')
+    expect(element.innerHTML).isEqualTo('<ul><li><div>favourite drink: sel...</div></li></ul>')
   })
 })
