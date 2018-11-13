@@ -5,8 +5,8 @@
   }
 
   NoteListView.prototype._formatNote = function(string) {
-    if (string.length > 20) {
-      return string.slice(0, 20) + "..."
+    if (string.length > this.MAX_NOTE_LENGTH) {
+      return `${string.slice(0, this.MAX_NOTE_LENGTH)}...`
     } else {
       return string
     }
