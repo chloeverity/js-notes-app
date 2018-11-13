@@ -3,22 +3,25 @@
     return {
       isEqualTo: function(argTwo) {
         if (arg !== argTwo) {
+          console.log('   %cF', 'color:red')
           throw new Error(`Assertion failed: ${arg} does not equal ${argTwo}`)
         } else {
-          console.log('   .')
+          console.log('   %cP', 'color:green')
         }
       },
       isInstanceOf: function(argTwo) {
         if (arg instanceof argTwo) {
-          console.log('   .')
+          console.log('   %cP', 'color:green')
         } else {
+          console.log('   %cF', 'color:red')
           throw new Error(`Assertion failed: ${arg} is not an instance of ${argTwo}`)
         }
       },
       includes: function(argTwo) {
         if (arg.includes(argTwo)) {
-          console.log('   .')
+          console.log('   %cP', 'color:green')
         } else {
+          console.log('   %cF', 'color:red')
           throw new Error(`Assertion failed: ${arg} does not include ${argTwo}`)
         }
       },

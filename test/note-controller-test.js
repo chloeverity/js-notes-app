@@ -7,8 +7,9 @@ describe('A note controller', function () {
   it('can insert note HTML into a page', function () {
     var noteController = new NoteController(new NoteList)
     var element = document.createElement("div")
-    element.id = "app";
-    document.body.appendChild(element);
+    element.id = 'app'
+    element.style.display = 'none'
+    document.body.appendChild(element)
     noteController.insertHTML()
     expect(element.innerHTML).isEqualTo('<ul><li><div>favourite drink: seltzer</div></li></ul>')
   })
