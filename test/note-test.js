@@ -1,7 +1,8 @@
-function testNoteHasText() {
-  text = 'My first note'
-  var note = new Note(text)
+describe('A note', function () {
+  it('has text', function () {
+    text = 'My first note'
+    var note = new Note(text)
 
-  assert.isEqualTo(note.getText(), text)
-}
-testNoteHasText()
+    expect(note.getText()).isEqualTo(text)
+  })
+})
